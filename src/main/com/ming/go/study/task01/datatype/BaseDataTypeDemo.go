@@ -5,6 +5,10 @@ import (
 	"strings"
 )
 
+/*
+*
+基本数据类型
+*/
 func main() {
 	// go 的基本数据类型
 
