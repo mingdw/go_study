@@ -68,5 +68,5 @@ func main() {
 						fmt.Println(result) // 输出: Hello World
 					}
 `
-	fmt.Println("字符串多行展示：", strings.TrimSpace(sn))
+	fmt.Println("字符串多行展示：", sn)
 }
