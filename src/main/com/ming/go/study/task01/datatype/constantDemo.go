@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package datatype
 
 const DATE_TYPE = "yyyy-mm-dd"
 const BASE_TRUE = true
@@ -9,6 +7,6 @@ const BASE_TRUE = true
 *
 常量类型
 */
-func main() {
-	fmt.Println(DATE_TYPE)
+func Data_type() string {
+	return DATE_TYPE
 }

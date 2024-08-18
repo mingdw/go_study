@@ -1,4 +1,4 @@
-package main
+package datatype
 
 import "fmt"
 
@@ -6,7 +6,7 @@ import "fmt"
 *
 切片相关操作
 */
-func main() {
+func SliceMain() {
 	//切片相比较数组，切片数据类型能够动态扩容，基于动态数组实现
 	// 切片的定义
 	var sl []string
