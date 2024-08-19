@@ -11,6 +11,10 @@ func init() {
 	fmt.Println("init.............")
 }
 
+/*
+*
+go的流程控制、函数、以及数据类型
+*/
 func main() {
 	fmt.Println("***********************hello world golang ***********************")
 	fmt.Println("hellow world go!")

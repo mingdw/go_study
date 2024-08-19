@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+/*
+*
+go的函数处理
+*/
 func main() {
 	method.DeferMain()
 	method.SystemFuncMain()
