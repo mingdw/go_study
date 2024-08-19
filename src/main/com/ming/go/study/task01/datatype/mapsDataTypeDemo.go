@@ -1,4 +1,4 @@
-package main
+package datatype
 
 import "fmt"
 
@@ -6,7 +6,7 @@ import "fmt"
 *
 maps数据结构
 */
-func main() {
+func MapsMain() {
 	m := make(map[string]int)
 	m["k1"] = 1
 	m["k2"] = 7

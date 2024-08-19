@@ -1,4 +1,4 @@
-package main
+package datatype
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 *
 基本数据类型
 */
-func main() {
+func BaseMain() {
 	// go 的基本数据类型
 
 	//1、整数类型：有符号整数和无符号整数

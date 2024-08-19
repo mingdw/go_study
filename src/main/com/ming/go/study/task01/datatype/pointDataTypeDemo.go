@@ -1,4 +1,4 @@
-package main
+package datatype
 
 import "fmt"
 
@@ -6,7 +6,7 @@ import "fmt"
 *
 指针
 */
-func main() {
+func PointMain() {
 	s1 := "这是中文字符串"
 	i1 := 12
 	s2 := "这是中文字符串"

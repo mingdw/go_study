@@ -1,4 +1,4 @@
-package main
+package datatype
 
 import "fmt"
 
@@ -6,7 +6,7 @@ import "fmt"
 *
 数组数据类型相关操作
 */
-func main() {
+func ArrayMain() {
 	//数组大小一确定没法更改大小
 	var str [3]string = [3]string{"a", "b", "c"}
 	str2 := [3]string{"d", "e", "f"}

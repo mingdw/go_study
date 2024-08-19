@@ -1,14 +1,15 @@
-package main
+package processcontrol
 
 import "fmt"
 
-func main() {
-	fmt.Println(getWenkendStr(1))
-	fmt.Println(getWenkendStr(5))
+func SwichMain() {
+	fmt.Println("16是星期： ", getWenkendStr(17))
 }
 
+// 给定数字，计算是星期几
 func getWenkendStr(a int) string {
-	switch a {
+	var b = a % 7
+	switch b {
 	case 1:
 		return "星期一"
 	case 2:
@@ -22,7 +23,7 @@ func getWenkendStr(a int) string {
 	case 6:
 		return "星期六"
 	case 7:
-		return "星期七"
+		return "星期天"
 	default:
 		return ""
 	}

@@ -1,41 +1,41 @@
-package main
+package processcontrol
 
 import (
 	"fmt"
-	"strconv"
 )
 
-func main() {
-	For1()
+func ForMain() {
+	fmt.Println("111")
+	for1()
 	for2()
 	for3()
 }
 
-func For1() {
-	ar := make([]string, 10, 15)
-	//计数增加循环
-	for i := 0; i < len(ar); i++ {
-		ar[i] = "num:" + strconv.Itoa(i)
+func for1() {
+	i := 0
+	slice := []int{}
+	//直接循环
+	for i < 10 {
+		slice = append(slice, i) // 添加另一个切片的所有元素
+		i++
 	}
-	fmt.Println(ar)
+	fmt.Println(slice)
 }
 
 func for2() {
-	ar := make([]string, 10, 15)
-	var i int
-	//条件循环
-	for i < 10 {
-		ar[i] = "num:" + strconv.Itoa(i)
-		i++
+	slice := []int{1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4}
+	//range循环
+	for i := range slice {
+		fmt.Println(i)
 	}
-	fmt.Println(ar)
+
 }
 
 func for3() {
-	ar := make([]string, 10, 15)
+	slice := []int{1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4}
 	//range循环
-	for i := range ar {
-		ar[i] = "num:" + strconv.Itoa(i)
+	for i := 0; i < len(slice); i++ {
+		fmt.Println(slice[i])
 	}
-	fmt.Println(ar)
+
 }

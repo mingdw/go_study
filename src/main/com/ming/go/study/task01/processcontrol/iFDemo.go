@@ -1,20 +1,18 @@
-package main
+package processcontrol
 
 import "fmt"
 
-func main() {
-	var a = true
-	if a {
-		fmt.Println("输出： true")
-	}
+func IfMain() {
 
-	caishu(15)
+	fmt.Println("15和16哪个大", getMax(15, 16), "大")
 }
 
-func caishu(a int) bool {
-	if a < 10 {
-		return false
+func getMax(a int, b int) int {
+	if a == b {
+		return 0
+	} else if a > b {
+		return a
 	} else {
-		return true
+		return b
 	}
 }
