@@ -14,4 +14,5 @@ func main() {
 	//oop.OOPPackageMain()
 	//oop.OOPExtendsMain()
 	oop.PolymorphismMain()
+	oop.OOPTypeJudge()
 }
