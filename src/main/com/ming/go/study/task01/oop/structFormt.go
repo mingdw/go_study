@@ -2,6 +2,7 @@ package oop
 
 import "fmt"
 
+// 面向对象结构体的转换，必须属性相同
 type Students struct {
 	Age int
 }

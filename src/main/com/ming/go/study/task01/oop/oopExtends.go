@@ -34,6 +34,9 @@ func (dog *Dog) CatchCart() {
 	fmt.Println("狗拿猫", dog.Dname)
 }
 
+/*
+oop集成采用内部匿名结构体嵌套实现，
+*/
 func OOPExtendsMain() {
 	var cart = Cart{}
 	cart.Age = 12

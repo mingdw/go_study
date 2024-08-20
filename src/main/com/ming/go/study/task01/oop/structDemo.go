@@ -2,6 +2,7 @@ package oop
 
 import "fmt"
 
+// 面向对象结构体
 type Student struct {
 	Name      string //姓名
 	Age       int    //年龄

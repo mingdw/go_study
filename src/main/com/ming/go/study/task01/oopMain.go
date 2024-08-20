@@ -12,5 +12,6 @@ func main() {
 	//oop.StructBindMain()
 	//oop.StructCustomizeTypeBindMain();
 	//oop.OOPPackageMain()
-	oop.OOPExtendsMain()
+	//oop.OOPExtendsMain()
+	oop.PolymorphismMain()
 }
