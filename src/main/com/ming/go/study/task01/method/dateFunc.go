@@ -2,7 +2,7 @@ package method
 
 import (
 	"fmt"
-	time "time"
+	"time"
 )
 
 /*
