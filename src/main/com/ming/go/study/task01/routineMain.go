@@ -1,8 +1,12 @@
 package main
 
-import "./routine"
+import (
+	"./datatype"
+)
 
 func main() {
-	routine.RoutineMain()
-	routine.RoutineMain2()
+	//routine.RoutineMain()
+	//routine.RoutineMain2()
+	//routine.RoutineMain3()
+	datatype.ChannelMain()
 }
