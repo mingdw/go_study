@@ -3,7 +3,11 @@ package datatype
 import (
 	"fmt"
 	"strconv"
+	"sync"
+	"time"
 )
+
+var wg sync.WaitGroup
 
 // 管道相关的练习
 func ChannelMain() {
@@ -48,5 +52,30 @@ func ChannelMain() {
 
 	for v := range schannel2 {
 		fmt.Println("管道遍历", v)
+	}
+
+	wg.Add(2)
+	var strch chan string
+	strch = make(chan string, 50)
+	go writeCh(strch)
+	go readCh(strch)
+	wg.Wait()
+}
+
+func writeCh(ch chan string) {
+	defer wg.Done()
+	for i := 0; i < 50; i++ {
+		ch <- strconv.Itoa(i)
+		fmt.Println("写入的数据是: ", strconv.Itoa(i))
+		time.Sleep(time.Second)
+	}
+	close(ch)
+}
+
+func readCh(ch chan string) {
+	defer wg.Done()
+	for v := range ch {
+		fmt.Println("读取的数据是: ", v)
+		time.Sleep(time.Second)
 	}
 }
