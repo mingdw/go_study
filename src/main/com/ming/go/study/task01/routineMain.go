@@ -2,6 +2,7 @@ package main
 
 import (
 	"./datatype"
+	"./routine"
 )
 
 func main() {
@@ -9,4 +10,5 @@ func main() {
 	//routine.RoutineMain2()
 	//routine.RoutineMain3()
 	datatype.ChannelMain()
+	routine.ChannelReadAndWriteMain()
 }
